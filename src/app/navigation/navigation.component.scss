@@ -1,0 +1,67 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.search{
+  width: 70vw;
+  padding: 1rem 5rem;
+
+  .searchbar{
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-radius: 0;
+    padding: 0 .3rem;
+    font-family: Roboto;
+    background-color: inherit;
+    color: white;
+    width: 70%;
+    margin-left: 5rem;
+    height: 1.5rem;
+  }
+
+  .search-button{
+    font-family: Roboto;
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-weight: bold;
+    width: 3rem;
+
+    &:hover{
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}
+
+span{
+  margin: 1rem;
+
+  a{
+    text-decoration: none;
+    color: ghostwhite;
+  }
+
+  &:hover{
+      opacity: 0.5;
+    }
+}
+
+.nav-profile{
+  margin-left: 2rem;
+}

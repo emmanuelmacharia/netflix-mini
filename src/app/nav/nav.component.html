@@ -1,0 +1,38 @@
+<nav class="app-netflix-top-navbar">
+  <div class="app-netflix-top-nav">
+    <ul>
+      <li>
+        <form action="search" class="app-netflix-search" (ngSubmit)="search(searchText.value)">
+          <input class="app-netflix-searchbar" type="text" name="search" placeholder="Search"
+            [formControl]="searchText" />
+          <button type="Submit">Search</button>
+        </form>
+      </li>
+      <li><a href="#"> Play </a></li>
+      <li><a href="#"> Profile </a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="app-netflix-side-navbar">
+  <!-- <div class="app-netflix-sidenav"> -->
+    <div class="app-netflix-title">
+      Netflix
+    </div>
+    <div class="app-netflix-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Favorites</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Downloads</a></li>
+      </ul>
+    </div>
+    <p *ngIf="searchText.value">
+      Value: {{searchText.value}}
+    </p>
+  <!-- </div> -->
+</nav>
+
+
